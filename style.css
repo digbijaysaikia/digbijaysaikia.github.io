@@ -398,12 +398,12 @@ body {
 }
 @media only screen and (max-width: 1024px) {
   .projects-section{
-    padding-bottom: 80px;
+    padding-bottom: 100px;
 }
 }
 @media only screen and (max-width: 470px) {
   .projects-section {
-    padding-bottom: 80px;
+    padding-bottom: 100px;
   }
 }
 .projects-section .recent {
