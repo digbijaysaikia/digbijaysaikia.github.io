@@ -486,11 +486,6 @@ body {
     display: flex;
     justify-content: flex-start; /* Align button to the left */
   }
-
-  .view-project-btn {
-    width: auto; /* Ensure button width adjusts based on content */
-    margin: 0; /* Remove default margin for better alignment */
-  }
 }
 
 .project-info {
@@ -525,7 +520,7 @@ body {
   gap: 8px;
   padding: 10px 25px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
@@ -537,6 +532,17 @@ body {
   justify-content: center;
   text-align: center; /* Ensure text is centered */
   white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+@media only screen and (max-width: 1024px) {
+  .view-project-btn{
+    font-weight: 600;
+}
+}
+@media only screen and (max-width: 470px) {
+  .view-project-btn{
+    font-weight: 600;
+  }
 }
 
 .view-project-btn:hover {
@@ -686,7 +692,7 @@ body {
   gap: 8px;
   padding: 10px 25px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 400;
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #626262;
@@ -698,6 +704,17 @@ body {
   justify-content: center;
   text-align: center; /* Ensure text is centered */
   white-space: nowrap; /* Prevents text from wrapping to the next line */
+}
+
+@media only screen and (max-width: 1024px) {
+  .social-btn{
+    font-weight: 600;
+}
+}
+@media only screen and (max-width: 470px) {
+  .social-btn{
+    font-weight: 600;
+  }
 }
 
 .social-btn:hover {
