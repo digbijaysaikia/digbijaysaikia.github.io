@@ -631,7 +631,7 @@ body {
 /* Footer Section */
 .footer {
   background-color: #ffffff;
-  color: #0c0407;
+  color: #3a3a3a;
   padding-bottom: 20px;
   margin-top: auto; /* Changed margin-top to 0 */
   text-align: left;
@@ -685,9 +685,9 @@ body {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: 600;
-  color: #0c0407;
+  color: #3a3a3a;
   background-color: #ffffff;
-  border: 1px solid #414141;
+  border: 1px solid #626262;
   border-radius: 30px;
   cursor: pointer;
   transition: background-color 0.3s ease;
