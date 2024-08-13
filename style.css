@@ -1,12 +1,13 @@
 html{
   height: 100%;
+  scroll-behavior: smooth;
 }
 body { 
   height: 100%;
   align-items: center;
   justify-content: center;
   margin: 0;
-  background: #F4F4F4;
+  background: #ffffff;
   font-size: 20px;
   font-family: "Red Hat Display", sans-serif;
   letter-spacing: 0px;
@@ -430,7 +431,7 @@ body {
 .projects-container {
   display: grid;
   grid-template-columns: repeat(2, minmax(300px, 1fr));
-  gap: 40px;
+  gap: 60px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
@@ -441,53 +442,111 @@ body {
 
 
 .project-card {
-  background: none;
+  align-self: flex-start;
   overflow: hidden;
   max-width: 100%;
   text-align: left;
+  transition: transform 0.3s ease;
 }
+
 
 .project-img {
   width: 100%;
   height: auto;
-}
-
-.project-info {
-  padding: 10px;
-  padding-left: 0;
-  padding-right: 0;
-}
-
-.project-info h3 {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  margin: 0;
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
 }
 
 .project-details {
   display: flex;
-  width: 100%;
   justify-content: space-between;
+  align-items: flex-start; /* Align items at the top */
+  padding-top: 15px;
+  gap: 25px;
+}
+
+
+/* Responsive styles for tablets and mobile devices */
+@media only screen and (max-width: 1024px) {
+  .project-details {
+    flex-direction: column; /* Stack items vertically for tablets */
+    gap: 15px; /* Adjust gap for a better fit */
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project-details {
+    gap: 20px; /* Smaller gap for mobile devices */
+  }
+
+  .div-button {
+    align-self: flex-start; /* Align button at the top for mobile devices */
+    width: 100%; /* Ensure button container takes full width */
+    display: flex;
+    justify-content: flex-start; /* Align button to the left */
+  }
+
+  .view-project-btn {
+    width: auto; /* Ensure button width adjusts based on content */
+    margin: 0; /* Remove default margin for better alignment */
+  }
+}
+
+.project-info {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.project-info h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+}
+
+.project-info p {
+  font-size: 16px;
+  color: #6d6d6d;
+  margin: 0;
+}
+
+.div-button {
+  display: flex;
   align-items: center;
 }
-
-.project-details span {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 1.5vh;
-  font-weight: 600;
-  color: #000000;
+.div-button a {
+  text-decoration: none;
 }
 
-.year,
-.type {
-  vertical-align: middle;
-  padding: 6px 20px;
+.view-project-btn {
+  gap: 8px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 100;
+  color: #5e5e5e;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  border-radius: 20px;
-  border: 0.13em solid rgba(116, 126, 138, .7); 
-  box-sizing: border-box;
+  text-align: center; /* Ensure text is centered */
+  white-space: nowrap; /* Prevents text from wrapping to the next line */
 }
+
+.view-project-btn:hover {
+  background-color: #007AFF;
+  color: white;
+  border: 1px solid #007AFF;
+}
+.view-project-btn:hover .button-icon {
+  filter: brightness(0) invert(1); /* Makes the SVG white on hover */
+}
+
+
 
 @media only screen and (max-width: 1024px) {
   .projects-section .myproject {
@@ -507,9 +566,6 @@ body {
   .work:hover img, .about:hover img, .education:hover img {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* reset */
     transform: scale(1.0); /* reset */
-  }
-  .project-details span {
-    font-size: 13px;
   }
   .project-info h3 {
     font-family: "Red Hat Display", sans-serif;
@@ -537,11 +593,8 @@ body {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0); /* reset */
     transform: scale(1.0); /* reset */
   }
-  .project-details span {
-    font-size: 10px;
-  }
   .project-info h3 {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
