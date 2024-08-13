@@ -422,6 +422,7 @@ body {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 600;
   text-align: center;
+  color: #000000;
   font-size: 48px;
   margin: 0;
   margin-top: 0px;
@@ -501,6 +502,7 @@ body {
 
 .project-info h3 {
   font-size: 20px;
+  color: #000000;
   font-weight: 600;
   margin: 0 0 8px 0;
 }
@@ -524,7 +526,7 @@ body {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: 600;
-  color: #3a3a3a;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #dcdcdc;
   border-radius: 30px;
@@ -631,7 +633,7 @@ body {
 /* Footer Section */
 .footer {
   background-color: #ffffff;
-  color: #3a3a3a;
+  color: #000000;
   padding-bottom: 20px;
   margin-top: auto; /* Changed margin-top to 0 */
   text-align: left;
@@ -685,7 +687,7 @@ body {
   padding: 10px 25px;
   font-size: 16px;
   font-weight: 600;
-  color: #3a3a3a;
+  color: #000000;
   background-color: #ffffff;
   border: 1px solid #626262;
   border-radius: 30px;
