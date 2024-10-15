@@ -944,6 +944,17 @@ body {
   margin-bottom: 5px; /* Add some space between list items */
 }
 
+@media only screen and (max-width: 1024px) {
+  .skills-column li {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 470px) {
+  .skills-column li {
+    font-size: 16px;
+  }
+}
+
 /* Media query for mobile devices */
 @media screen and (max-width: 600px) {
   .skills-column {
